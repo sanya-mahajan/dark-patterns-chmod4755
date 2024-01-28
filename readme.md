@@ -1,5 +1,6 @@
-# Dapde Pattern Highlighter Browser Extension
-This tool, developed by the informatics part of the [dapde-project], is intended to help consumers to navigate the internet in a way similar to an ad blocker. However, the highlighter differs from ad blockers in one crucial aspect: it does not block individual dark patterns on websites but highlights them so that consumers become aware of the influences affecting them. In addition, the tool informs about the type of pattern.
+### Dark Patterns
+Dark patterns are design patterns that lead users to act in a certain way that is contrary to their interests, exploiting design power unilaterally in the interests of their creator.
+
 
 ## Contents
 - [Features](#features)
@@ -24,7 +25,6 @@ This tool, developed by the informatics part of the [dapde-project], is intended
 <!-- Videos here -->
 ### Screenshots
 <!-- Screenshots here-->
-| *Example of a web site with two highlighted dark patterns. The black border highlights a countdown and a scarcity pattern element (from left to right). \*Some web site details were manually removed from the screenshot.* | *The popup window of the extension. The popup window can be used to disable and enable the highlighting. Additionally, information about the detected patterns is displayed and each one can be highlighted separately.* |
 
 ## How it works
 The Pattern Highlighter works entirely locally in the browser and does not connect to any servers. When visiting a web page, the extension injects a small script that creates an internal temporary copy of the entire web page i.e. its HTML DOM. After a short pause (about 1.5 seconds) a second copy is created. Subsequently, all elements of these copies are examined individually and in combination with child elements using the implemented pattern detection methods. The pattern detection methods decide whether an element is a specific dark pattern or not. The reason for creating two copies with a time gap is to detect changes on the web page. This makes it possible to detect certain patterns such as countdowns.
@@ -58,19 +58,4 @@ To install the extension, the repository or the `chrome` folder must be download
 2. Enable Developer Mode by clicking the toggle switch next to **Developer mode**.
 3. Click the **Load unpacked** button and select the `chrome` directory.
 4. (Optional): Click the Extensions menu puzzle button in the address bar and then click the **Pin** button next to the *Pattern Highlighter* to keep its icon permanently displayed.
-
-## Libraries Used
-- [Lit 2.7.2](https://lit.dev/) ([BSD-3-Clause](chrome/scripts/lit/LICENSE))
-
-## License
-[MIT](LICENSE)
-
-## About Dapde
-The Dark Pattern Detection Project (Dapde) examines the manipulation of consumers in a digital environment through "dark patterns".
-
-### Dark Patterns
-Dark patterns are design patterns that lead users to act in a certain way that is contrary to their interests, exploiting design power unilaterally in the interests of their creator.
-
-### The Project
-Dapde is a joint project between the Institute of Computer Science at Heidelberg University and the German Research Institute for Public Administration in Speyer (FÖV). The Informatics Section tackles the challenge of recognizing dark patterns in online interactions with the aim of warning users of dangers early on. The Law Section develops legal answers to the challenges of steering consumers through dark patterns.
 
