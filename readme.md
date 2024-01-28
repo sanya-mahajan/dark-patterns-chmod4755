@@ -1,5 +1,5 @@
 # Dapde Pattern Highlighter Browser Extension
-This tool, developed by the informatics part of the [dapde-project](https://dapde.de/), is intended to help consumers to navigate the internet in a way similar to an ad blocker. However, the highlighter differs from ad blockers in one crucial aspect: it does not block individual dark patterns on websites but highlights them so that consumers become aware of the influences affecting them. In addition, the tool informs about the type of pattern.
+This tool, developed by the informatics part of the [dapde-project], is intended to help consumers to navigate the internet in a way similar to an ad blocker. However, the highlighter differs from ad blockers in one crucial aspect: it does not block individual dark patterns on websites but highlights them so that consumers become aware of the influences affecting them. In addition, the tool informs about the type of pattern.
 
 ## Contents
 - [Features](#features)
@@ -9,7 +9,6 @@ This tool, developed by the informatics part of the [dapde-project](https://dapd
 - [Installation](#installation)
 - [Libraries Used](#libraries-used)
 - [License](#license)
-- [About Dapde](#about-dapde)
 
 ## Features
 - Automatic detection of dark patterns on web pages
@@ -18,16 +17,13 @@ This tool, developed by the informatics part of the [dapde-project](https://dapd
 - No blocking of web page content
 - Extension icon displaying number of detected dark patterns
 - Function to individually highlight each detected dark pattern
-- Supporting multiple languages (currently English and German available)
+- Supporting multiple languages (currently English available)
 
 ## Video and Screenshots
 ### Teaser Video
-Click on the image or [here](https://dapde.de/en/news-en/dapde-dark-pattern-highlighter-en/) to watch the teaser video for the Pattern Highlighter.
-[![Teaser Video](images/video_thumbnail.png)](https://dapde.de/en/news-en/dapde-dark-pattern-highlighter-en/)
-
+<!-- Videos here -->
 ### Screenshots
-|                                                                                         ![Highlighting Example](images/example.png)                                                                                         |                                                                                      ![Pattern Highlighter Popup](images/popup.png)                                                                                      |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+<!-- Screenshots here-->
 | *Example of a web site with two highlighted dark patterns. The black border highlights a countdown and a scarcity pattern element (from left to right). \*Some web site details were manually removed from the screenshot.* | *The popup window of the extension. The popup window can be used to disable and enable the highlighting. Additionally, information about the detected patterns is displayed and each one can be highlighted separately.* |
 
 ## How it works
@@ -36,10 +32,10 @@ The Pattern Highlighter works entirely locally in the browser and does not conne
 Mainly responsible for the results of the pattern detection are the mentioned detection functions. These are centrally defined in the `patternConfig` object together with information about the associated patterns in [`constants.js`](chrome/scripts/constants.js). This `patternConfig` object can be extended arbitrarily by additional patterns and functions, according to the requirements that are commented in [`constants.js`](chrome/scripts/constants.js).
 
 Currently, one detection function each is implemented for the four following patterns.
-- [Countdown](https://dapde.de/en/dark-patterns-en/types-and-examples-en/druck2-en/)
-- [Scarcity](https://dapde.de/en/dark-patterns-en/types-and-examples-en/druck2-en/)
-- [Social Proof](https://dapde.de/en/dark-patterns-en/types-and-examples-en/druck2-en/)
-- [Forced Continuity](https://dapde.de/en/dark-patterns-en/types-and-examples-en/operativer-zwang2-en/)
+- [Countdown]
+- [Scarcity]
+- [Social Proof]
+- [Forced Continuity]
 
 Right now, all of the four detection functions are optimized for German and English websites and cannot be applied to websites in other languages.
 
@@ -78,5 +74,3 @@ Dark patterns are design patterns that lead users to act in a certain way that i
 ### The Project
 Dapde is a joint project between the Institute of Computer Science at Heidelberg University and the German Research Institute for Public Administration in Speyer (FÖV). The Informatics Section tackles the challenge of recognizing dark patterns in online interactions with the aim of warning users of dangers early on. The Law Section develops legal answers to the challenges of steering consumers through dark patterns.
 
-### Dapde Website
-More information about our project and dark patterns can be found on our [website](https://dapde.de/).
