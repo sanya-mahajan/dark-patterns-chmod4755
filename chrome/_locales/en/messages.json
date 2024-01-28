@@ -62,7 +62,7 @@
     }
   },
   "patternCountdown_name": {
-    "message": "Countdown",
+    "message": "Coundown ",
     "description": "Name of the countdown pattern."
   },
   "patternCountdown_infoUrl": {

@@ -125,8 +125,7 @@ export const patternConfig = {
             infoUrl: brw.i18n.getMessage("patternCountdown_infoUrl"),
             info: brw.i18n.getMessage("patternCountdown_info"),
             languages: [
-                "en",
-                "de"
+                "en"
             ]
         },
         {
@@ -164,8 +163,7 @@ export const patternConfig = {
             infoUrl: brw.i18n.getMessage("patternScarcity_infoUrl"),
             info: brw.i18n.getMessage("patternScarcity_info"),
             languages: [
-                "en",
-                "de"
+                "en"
             ]
         },
         {
@@ -201,8 +199,7 @@ export const patternConfig = {
             infoUrl: brw.i18n.getMessage("patternSocialProof_infoUrl"),
             info: brw.i18n.getMessage("patternSocialProof_info"),
             languages: [
-                "en",
-                "de"
+                "en"
             ]
         },
         {
@@ -276,8 +273,7 @@ export const patternConfig = {
             infoUrl: brw.i18n.getMessage("patternForcedContinuity_infoUrl"),
             info: brw.i18n.getMessage("patternForcedContinuity_info"),
             languages: [
-                "en",
-                "de"
+                "en"
             ]
         }
     ]
