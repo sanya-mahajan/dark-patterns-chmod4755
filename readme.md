@@ -18,7 +18,6 @@ Dark patterns are design patterns that lead users to act in a certain way that i
 - No blocking of web page content
 - Extension icon displaying number of detected dark patterns
 - Function to individually highlight each detected dark pattern
-- Supporting multiple languages (currently English available)
 
 ## Video and Screenshots
 ### Teaser Video
@@ -37,7 +36,6 @@ Currently, one detection function each is implemented for the four following pat
 - [Social Proof]
 - [Forced Continuity]
 
-Right now, all of the four detection functions are optimized for German and English websites and cannot be applied to websites in other languages.
 
 ## Browser Compatibility
 | Browser         	| Is compatible? 	| Tested versions                                                               	|
