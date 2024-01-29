@@ -70,11 +70,13 @@ export class ExtensionPopup extends LitElement {
         if (!constants.patternConfigIsValid) {
             // If the configuration is not valid, the content script does not start the pattern highlighting
             // and the extension is permanently disabled. Therefore set the status to permanently off.
-            this.activation = activationState.PermanentlyOff;
+            //this.activation = activationState.PermanentlyOff;
+            this.initActivation = this.activation;
         } else {
             // Otherwise, set the activation state to off by default.
             // This will be overwritten with the true status later.
-            this.activation = activationState.Off;
+            //this.activation = activationState.Off;
+            this.initActivation = this.activation;
         }
         this.initActivation = this.activation;
         // Set the results initially to an empty dictionary. The true results will be loaded later.
@@ -107,10 +109,10 @@ export class ExtensionPopup extends LitElement {
     async firstUpdated() {
         // Check if the activation state has already been set as permanently disabled
         // due to an invalid configuration.
-        if (this.activation === activationState.PermanentlyOff) {
-            // If yes, then exit the function.
-            return;
-        }
+        // if (this.activation === activationState.PermanentlyOff) {
+        //     // If yes, then exit the function.
+        //     return;
+        // }
         // Load data about the current tab.
         let currentTab = await getCurrentTab();
         // Load the activation state and results, if the tab contains a web page loaded with HTTP(S),
@@ -141,7 +143,7 @@ export class ExtensionPopup extends LitElement {
         } else {
             // If the extension's content script is not injected, set the activation state to permanently off,
             // because in this case the extension cannot be activated.
-            this.activation = activationState.PermanentlyOff;
+            //this.activation = activationState.PermanentlyOff;
         }
         // Set the initial activation state to the state just loaded at initialization.
         this.initActivation = this.activation;
