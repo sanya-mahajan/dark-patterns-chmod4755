@@ -8,7 +8,7 @@
     "description": "The description of the extension."
   },
   "errorInvalidConfig": {
-    "message": "The internal pattern configuration of the extension is invalid. The pattern highlighter will not start.",
+    "message": "",
     "description": "The error message in case of an invalid internal pattern configuration."
   },
   "buttonOnState": {
@@ -36,11 +36,11 @@
     "description": "Heading in the popup for the list of found patterns."
   },
   "headingSupportedPatterns": {
-    "message": "Supported pattern types",
+    "message": "",
     "description": "Heading in the popup for the list of supported patterns."
   },
   "textMoreInformation": {
-    "message": "More information about Dark Patterns",
+    "message": "",
     "description": "Text in the footer preceding the link to the dapde.de website."
   },
   "infoExtensionStarted": {
@@ -62,11 +62,11 @@
     }
   },
   "patternCountdown_name": {
-    "message": "Coundown ",
+    "message": "",
     "description": "Name of the countdown pattern."
   },
   "patternCountdown_infoUrl": {
-    "message": "https://dapde.de/en/dark-patterns-en/types-and-examples-en/druck2-en/",
+    "message": "",
     "description": "URL to the explanation of the countdown pattern on the dapde.de website."
   },
   "patternCountdown_info": {
@@ -74,11 +74,11 @@
     "description": "Brief explanation of the countdown Pattern."
   },
   "patternScarcity_name": {
-    "message": "Scarcity",
+    "message": "",
     "description": "Name of the scarcity pattern."
   },
   "patternScarcity_infoUrl": {
-    "message": "https://dapde.de/en/dark-patterns-en/types-and-examples-en/druck2-en/",
+    "message": "",
     "description": "URL to the explanation of the scarcity pattern on the dapde.de website."
   },
   "patternScarcity_info": {
@@ -86,11 +86,11 @@
     "description": "Brief explanation of the scarcity Pattern."
   },
   "patternSocialProof_name": {
-    "message": "Social Proof",
+    "message": "",
     "description": "Name of the social proof pattern."
   },
   "patternSocialProof_infoUrl": {
-    "message": "https://dapde.de/en/dark-patterns-en/types-and-examples-en/druck2-en/",
+    "message": "",
     "description": "URL to the explanation of the social proof pattern on the dapde.de website."
   },
   "patternSocialProof_info": {
@@ -102,7 +102,7 @@
     "description": "Name of the forced continuity pattern."
   },
   "patternForcedContinuity_infoUrl": {
-    "message": "https://dapde.de/en/dark-patterns-en/types-and-examples-en/operativer-zwang2-en/",
+    "message": "",
     "description": "URL to the explanation of the forced continuity pattern on the dapde.de website."
   },
   "patternForcedContinuity_info": {

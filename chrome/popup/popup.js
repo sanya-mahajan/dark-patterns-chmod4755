@@ -159,7 +159,6 @@ export class ExtensionPopup extends LitElement {
             <redo-button .activation=${this.initActivation}></redo-button>
             <found-patterns-list .activation=${this.initActivation} .results=${this.results}></found-patterns-list>
             <show-pattern-button .activation=${this.initActivation} .results=${this.results}></show-pattern-button>
-            <supported-patterns-list></supported-patterns-list>
             <popup-footer></popup-footer>
         `;
     }
@@ -677,9 +676,7 @@ export class PopupFooter extends LitElement {
      */
     render() {
         return html`
-        <div>
-            ${brw.i18n.getMessage("textMoreInformation")}: <a href="https://dapde.de/" target="_blank">dapde.de</a>.
-        </div>
+       
       `;
     }
 }
